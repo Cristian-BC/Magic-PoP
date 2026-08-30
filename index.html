@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Pop — Figuras coleccionables</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#inicio" class="brand">
+      <span class="brand__dot"></span>
+      Magic Pop
+    </a>
+    <nav class="quicknav" aria-label="Accesos rápidos">
+      <a href="#existencia" class="pill">En existencia</a>
+      <a href="#redes" class="pill">Nuestras redes</a>
+      <a href="#gorras" class="pill">Gorras</a>
+      <a href="#postres" class="pill">Favoritos de los clientes</a>
+      <a href="#proximamente" class="pill">Próximamente</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="hero__halftone" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__tag">☆ stand oficial ☆</span>
+      <h1 class="hero__title">MAGIC<span>POP</span></h1>
+      <p class="hero__subtitle">Todo lo que un coleccionista busca en un solo lugar</p>
+      <a href="#existencia" class="btn btn--primary">Ver colección</a>
+    </div>
+  </section>
+
+  <section id="existencia" class="section">
+    <div class="section__head">
+      <span class="section__eyebrow">01</span>
+      <h2 class="section__title">En existencia</h2>
+      <p class="section__desc">Lo que tenemos disponible ahora mismo en el stand.</p>
+    </div>
+    <div class="grid grid--existencia" id="grid-existencia"></div>
+  </section>
+
+  <section id="redes" class="section section--alt">
+    <div class="section__head">
+      <span class="section__eyebrow">02</span>
+      <h2 class="section__title">Nuestras redes</h2>
+      <p class="section__desc">Síguenos para ver restocks, sorteos y novedades.</p>
+    </div>
+    <div class="grid grid--redes" id="grid-redes"></div>
+  </section>
+
+  <section id="gorras" class="section">
+    <div class="section__head">
+      <span class="section__eyebrow">03</span>
+      <h2 class="section__title">Gorras</h2>
+      <p class="section__desc">Desliza para ver todo el catálogo.</p>
+    </div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn carousel-btn--left" id="gorras-prev" aria-label="Ver anteriores">‹</button>
+      <div class="carousel" id="carousel-gorras"></div>
+      <button class="carousel-btn carousel-btn--right" id="gorras-next" aria-label="Ver siguientes">›</button>
+    </div>
+  </section>
+
+  <section id="postres" class="section section--alt">
+    <div class="section__head">
+      <span class="section__eyebrow">04</span>
+      <h2 class="section__title">Favoritos de los clientes</h2>
+      <p class="section__desc">Los que todos deseamos.</p>
+    </div>
+    <div class="grid grid--postres" id="grid-postres"></div>
+  </section>
+
+  <section id="proximamente" class="section">
+    <div class="section__head">
+      <span class="section__eyebrow">05</span>
+      <h2 class="section__title">Próximamente</h2>
+      <p class="section__desc">Lo que viene en camino al stand.</p>
+    </div>
+    <div class="grid grid--proximamente" id="grid-proximamente"></div>
+  </section>
+
+</main>
+
+<footer class="footer" id="contacto">
+  <div class="footer__ticket">
+    <div class="footer__brand">
+      <span class="brand__dot"></span>
+      Magic Pop
+    </div>
+    <div class="footer__info">
+      <div class="footer__item">
+        <span class="footer__label">Ubicación</span>
+        <p id="footer-ubicacion">—</p>
+      </div>
+      <div class="footer__item">
+        <span class="footer__label">Contacto</span>
+        <p id="footer-telefono">—</p>
+      </div>
+      <div class="footer__item">
+        <span class="footer__label">Horario</span>
+        <p id="footer-horario">—</p>
+      </div>
+    </div>
+    <a id="footer-whatsapp" href="#" class="btn btn--ghost" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  </div>
+  <p class="footer__legal">Magic Pop © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
